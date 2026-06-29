@@ -41,6 +41,10 @@ jobs:
       - name: Build
         run: bun run build
 
+      # Trusted publishing (OIDC) requires npm >= 11.5.1
+      - name: Upgrade npm for OIDC
+        run: npm install -g npm@latest
+
       - name: Publish to NPM
         run: |
           VERSION=$(node -p "require('./package.json').version")
@@ -53,5 +57,3 @@ jobs:
           fi
           echo "Publishing $VERSION with dist-tag: $TAG"
           npm publish --access public --tag "$TAG"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
