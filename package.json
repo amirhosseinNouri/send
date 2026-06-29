@@ -1,6 +1,6 @@
 {
   "name": "@amirhosseinnouri/send",
-  "version": "1.0.0-2",
+  "version": "1.0.0-3",
   "description": "Send a structured message to chat providers (Slack, Teams, Telegram, Element, Mattermost) from code or the CLI.",
   "type": "module",
   "bin": {
