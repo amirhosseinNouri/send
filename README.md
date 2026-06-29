@@ -1,4 +1,4 @@
-# @amirhosseinnouri/send
+# Send
 
 Send a **structured message** to a chat provider — from code or the command line.
 
