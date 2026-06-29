@@ -1,0 +1,53 @@
+{
+  "name": "@amirhosseinnouri/send",
+  "version": "0.0.1",
+  "description": "Send a structured message to chat providers (Slack, Teams, Telegram, Element, Mattermost) from code or the CLI.",
+  "type": "module",
+  "bin": {
+    "send": "./dist/cli.cjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production tsup",
+    "test": "bun test",
+    "check": "biome check .",
+    "check:fix": "biome check --write ."
+  },
+  "keywords": [
+    "slack",
+    "teams",
+    "telegram",
+    "element",
+    "matrix",
+    "mattermost",
+    "webhook",
+    "notification",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^6.0.2",
+    "marked": "^18.0.2",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.8",
+    "@types/bun": "latest",
+    "@types/command-line-args": "^5.2.3",
+    "@types/node": "^25.6.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
