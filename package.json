@@ -3,6 +3,10 @@
   "version": "1.0.0-3",
   "description": "Send a structured message to chat providers (Slack, Teams, Telegram, Element, Mattermost) from code or the CLI.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhosseinNouri/send.git"
+  },
   "bin": {
     "send": "dist/cli.cjs"
   },
