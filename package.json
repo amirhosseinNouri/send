@@ -4,7 +4,7 @@
   "description": "Send a structured message to chat providers (Slack, Teams, Telegram, Element, Mattermost) from code or the CLI.",
   "type": "module",
   "bin": {
-    "send": "./dist/cli.cjs"
+    "send": "dist/cli.cjs"
   },
   "exports": {
     ".": {
